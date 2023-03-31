@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Стройматериалы Алматы</title>
+        <link rel="stylesheet" href="css/main.css"
+    </head>
+    <body>
+        <header>
+            <div id="logo" onclick="slowScroll(#top')">
+                <span>НУРАЙ</span>
+            </div>
+            <div id="about">
+                <a href="#" onclick="slowScroll('#overview')" title="Наши товары">Наши товары</a>
+                <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Обратный звонок</a>
+                <a href="https://wa.me/7752569933"><img src="whatsapp_PNG21.png"/></a>
+            </div>
+        </header>
+
+        <div id="top">
+            <h1>Песок, щебень</h1>
+            <h3>в Алматы</h3>
+        </div>
+
+       <div id="main">
+            <div class="intro">
+                <h2>Большой выбор!</h2>
+        </div>
+        <div class="text">
+            <text>У нас можно найти широкий ассортимент материалов различной фракции и цвета. 
+                Это позволит вам выбрать наиболее подходящий вариант под конкретные нужды.<text>
+        </div>
+        </div>   
+
+     <div id="overview">
+        <h2>Наши товары</h2>
+        <h4>Лучшего качество</h4>
+
+        <div class="img">
+            <img src="Screenshot_7.png" alt="">
+            <span>Щебеночно-песчаная смесь</span>    
+        </div>
+        <div class="img">
+            <img src="щебень.png" alt="">
+            <span>Щебень</span>    
+        </div>
+        <div class="img">
+            <img src="ммп.png" alt="">
+            <span>Мытый мелкий песок</span>    
+        </div>
+        <div class="img">
+            <img src="мытый отсев.png" alt="">
+            <span>Мытый отсев</span>    
+        </div>
+     </div>
+
+     <div id="contacts">
+        <center><h5>Обратный звонок</h5></center>
+        <form id="form_input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Имя" name="name" id="name"><br>
+            <label for="number">Номер телефона: <span>*</span></label><br>
+            <input type="number" placeholder="+7(777)0000000" name="number" id="number"><br>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+     </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            function slowScroll(id) {
+               $('html, body').animate({
+                scrollTop: $(id).offset().top 
+               }, 500); 
+            }
+        </script>
+    </body>
+</html>
